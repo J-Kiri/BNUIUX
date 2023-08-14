@@ -33,14 +33,23 @@ h1.topic {
     font-weight: 800;
     line-height: normal;
 
+    span.p {
+        color: #F2184F;
+    }
+}
+
+#topic1 {
     position: absolute;
     z-index: 1;
     left: 140px;
     top: 1100px;
+}
 
-    span.p {
-        color: #F2184F;
-    }
+#topic2 {
+    position: absolute;
+    z-index: 1;
+    left: 140px;
+    top: 1640px;
 }
 
 h2.title {
@@ -89,25 +98,120 @@ h4.text {
     }
 }
 
+#ux {
+    color: #F2184F;
+    font-size: 28px;
+    font-weight: 700;
+
+    position: absolute;
+    z-index: 1;
+    top: 1251px;
+    left: 173px;
+}
+
 #sq1_p1 {
     position: absolute;
+    top: 23px;
     left: 32px;
 }
 
 #sq1_p2 {
     position: absolute;
-    left: 134px;
+    top: 23px;
+    left:209px;
 }
 
 #sq1_p3 {
     position: absolute;
-    left: 256px;
+    top: 23px;
+    left: 382px;
 }
 
 #sq1_p4 {
     position: absolute;
-    top: 109px;
-    left: 134px;
+    top: 80px;
+    left: 32px;
+}
+
+#sq1_p5 {
+    position: absolute;
+    top: 80px;
+    left: 209px;
+}
+
+#sq1_p6 {
+    position: absolute;
+    top: 138px;
+    left: 32px;
+}
+
+#ui {
+    color: #F2184F;
+    font-size: 28px;
+    font-weight: 700;
+
+    position: absolute;
+    z-index: 1;
+    top: 1251px;
+    left: 778px;
+}
+
+#sq2_p1 {
+    position: absolute;
+    top: 23px;
+    left: 32px;
+}
+
+#sq2_p2 {
+    position: absolute;
+    top: 23px;
+    left:137px;
+}
+
+#sq2_p3 {
+    position: absolute;
+    top: 23px;
+    left: 391px;
+}
+
+#sq2_p4 {
+    position: absolute;
+    top: 80px;
+    left: 32px;
+}
+
+#sq2_p5 {
+    position: absolute;
+    top: 80px;
+    left: 195px;
+}
+
+#sq2_p6 {
+    position: absolute;
+    top: 80px;
+    left: 353px;
+}
+
+#ed_p1 {
+    color: #BFBFBF;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.48px;
+
+    position: absolute;
+    top: 1802px;
+    left: 200px;
+}
+
+#ed_p2 {
+    color: #BFBFBF;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.48px;
+
+    position: absolute;
+    top: 1802px;
+    left: 800px;
 }
 
 li.about {
@@ -174,6 +278,32 @@ img.bar {
     left: 910px;
 }
 
+img.livros {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    
+    fill: #F2184F;
+
+    position: absolute;
+    z-index: 1;
+    top: 1835px;
+    left: 140px;
+}
+
+img.linguas {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    
+    fill: #F2184F;
+
+    position: absolute;
+    z-index: 1;
+    top: 1835px;
+    left: 740px;
+}
+
 div.s_background {
     width: 1920px;
     height: 1203px;
@@ -197,6 +327,17 @@ div.square {
 
     
     position: absolute;
-    top: 1364px;
+    top: 1315px;
     left: 140px;
+}
+
+#sq2 {
+    width: 560px;
+    height: 189px;
+    flex-shrink: 0;
+
+    
+    position: absolute;
+    top: 1315px;
+    left: 745px;
 }

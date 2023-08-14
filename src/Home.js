@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 
 import IMAGEPaint from "./assets/IMAGEM_Paint.png"
 import VECTORArrow from "./assets/VECTOR_Arrow.png" 
-import VECTORBar from "./assets/VECTOR_Bar.png" 
+import VECTORBar from "./assets/VECTOR_Bar.png"
+import ICONLanguage from "./assets/ICON_Linguas.png"
+import ICONBooks from "./assets/ICON_Livros.png"
 
 export default function Home() {
     return(
@@ -34,20 +36,51 @@ export default function Home() {
 
             <img class="bar" src={VECTORBar} alt="Bar"/>
         
-            {/* Competencias */}
-            <h1 class="topic">
+            {/* Competencies */}
+            <h1 class="topic" id="topic1">
                 COMPETENCIES
                 <span class="p">.</span>
             </h1>
+
+            <h4 class="text" id="ux">
+                <span class="title_bg">UX Design</span>
+            </h4>
 
             <div class="square" id="sq1">
                 <h4 class="text" id="sq1_p1"><span class="title_bg">Analysis Tools</span></h4>
                 <h4 class="text" id="sq1_p2"><span class="title_bg">UX Heuristics</span></h4>
                 <h4 class="text" id="sq1_p3"><span class="title_bg">Userflow</span></h4>
-                {/* <h4 class="text" id="sq1_p4"><span class="title_bg">A/B Testing</span></h4>
+                <h4 class="text" id="sq1_p4"><span class="title_bg">A/B Testing</span></h4>
                 <h4 class="text" id="sq1_p5"><span class="title_bg">Personas Development</span></h4>
-                <h4 class="text" id="sq1_p6"><span class="title_bg">Costumer Jouney Mapping</span></h4> */}
+                <h4 class="text" id="sq1_p6"><span class="title_bg">Costumer Jouney Mapping</span></h4>
             </div>
+
+            <h4 class="text" id="ui">
+                <span class="title_bg">UI Design</span>
+            </h4>
+
+            <div class="square" id="sq2">
+                <h4 class="text" id="sq2_p1"><span class="title_bg">Figma</span></h4>
+                <h4 class="text" id="sq2_p2"><span class="title_bg">Advanced Typography</span></h4>
+                <h4 class="text" id="sq2_p3"><span class="title_bg">Grids</span></h4>
+                <h4 class="text" id="sq2_p4"><span class="title_bg">Wireframing</span></h4>
+                <h4 class="text" id="sq2_p5"><span class="title_bg">Prototypes</span></h4>
+                <h4 class="text" id="sq2_p6"><span class="title_bg">Design System</span></h4>
+            </div>
+
+            {/* Education */}
+            <h1 class="topic" id="topic2">
+                EDUCATION
+                <span class="p">.</span>
+            </h1>
+
+            <img class="livros" src={ICONBooks} alt="Livros"/>
+            <h4 class="text" id="ed_p1">COURSES</h4>
+
+            <h4 class="text" id="sq2_p1">Figma</h4>
+
+            <img class="linguas" src={ICONLanguage} alt="Linguas"/>
+            <h4 class="text" id="ed_p2">LANGUAGES</h4>
         </div>
     )
 }
