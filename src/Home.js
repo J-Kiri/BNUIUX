@@ -78,6 +78,7 @@ export default function Home() {
             <h4 class="text" id="ed_p1">COURSES</h4>
 
             <h4 class="text" id="sq2_p1">Figma</h4>
+            
 
             <img class="linguas" src={ICONLanguage} alt="Linguas"/>
             <h4 class="text" id="ed_p2">LANGUAGES</h4>
