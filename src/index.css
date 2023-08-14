@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Figtree";
+  src:
+    local("Figtree"),
+    url("../public/Figtree/Figtree-Regular.otf") format("opentype");
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src:
+    local("FigtreeBlack"),
+    url("../public/Figtree/Figtree-Black.otf") format("opentype");
+
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src:
+    local("FigtreeBold"),
+    url("../public/Figtree/Figtree-Bold.otf") format("opentype");
+
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src:
+    local("FigtreeExtraBold"),
+    url("../public/Figtree/Figtree-ExtraBold.otf") format("opentype");
+
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src:
+    local("FigtreeLight"),
+    url("../public/Figtree/Figtree-Light.otf") format("opentype");
+
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src:
+    local("FigtreeMedium"),
+    url("../public/Figtree/Figtree-Medium.otf") format("opentype");
+
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src:
+    local("FigtreeRegular"),
+    url("../public/Figtree/Figtree-Regular.otf") format("opentype");
+
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Figtree'
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
