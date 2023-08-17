@@ -192,7 +192,7 @@ h4.text {
     left: 353px;
 }
 
-#ed_p1 {
+#edc {
     color: #BFBFBF;
     font-size: 24px;
     font-weight: 800;
@@ -203,7 +203,69 @@ h4.text {
     left: 200px;
 }
 
-#ed_p2 {
+#edc_1 {
+    color: #1B1B1B;
+    font-family: Figtree;
+    font-size: 24px;
+
+    position: absolute;
+    top: 1865px;
+    left: 200px;
+}
+
+#edc_2 {
+    color: #1B1B1B;
+    font-family: Figtree;
+    font-size: 24px;
+
+    
+    position: absolute;
+    top: 1906px;
+    left: 200px;
+}
+
+#edc_3 {
+    color: #1B1B1B;
+    font-family: Figtree;
+    font-size: 24px;
+
+    position: absolute;
+    top: 1947px;
+    left: 200px;
+}
+
+#edc_4 {
+    color: #1B1B1B;
+    font-family: Figtree;
+    font-size: 24px;
+
+    position: absolute;
+    top: 1988px;
+    left: 200px;
+}
+
+
+#edc_5 {
+    color: #1B1B1B;
+    font-family: Figtree;
+    font-size: 24px;
+
+    position: absolute;
+    top: 2029px;
+    left: 200px;
+}
+
+#edc_6 {
+    color: #1B1B1B;
+    font-family: Figtree;
+    font-size: 24px;
+
+    position: absolute;
+    top: 2077px;
+    left: 200px;
+}
+
+#edl {
     color: #BFBFBF;
     font-size: 24px;
     font-weight: 800;

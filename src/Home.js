@@ -75,13 +75,18 @@ export default function Home() {
             </h1>
 
             <img class="livros" src={ICONBooks} alt="Livros"/>
-            <h4 class="text" id="ed_p1">COURSES</h4>
+            <h4 class="text" id="edc">COURSES</h4>
 
-            <h4 class="text" id="sq2_p1">Figma</h4>
+            <h4 class="text" id="edc_1">UI Design</h4>
+            <h4 class="text" id="edc_2">UI Design Advanced</h4>
+            <h4 class="text" id="edc_3">UI Design Advanced Typography</h4>
+            <h4 class="text" id="edc_4">UX Design</h4>
+            <h4 class="text" id="edc_5">UX Heuristics</h4>
+            <h4 class="text" id="edc_6">UX Research</h4>
             
 
             <img class="linguas" src={ICONLanguage} alt="Linguas"/>
-            <h4 class="text" id="ed_p2">LANGUAGES</h4>
+            <h4 class="text" id="edl">LANGUAGES</h4>
         </div>
     )
 }
