@@ -261,7 +261,7 @@ h4.text {
     font-size: 24px;
 
     position: absolute;
-    top: 2077px;
+    top: 2070px;
     left: 200px;
 }
 
@@ -273,6 +273,37 @@ h4.text {
 
     position: absolute;
     top: 1802px;
+    left: 800px;
+}
+
+#edl_1 {
+    color: #1B1B1B;
+    font-family: Figtree;
+    font-size: 24px;
+
+    position: absolute;
+    top: 1865px;
+    left: 800px;
+}
+
+#edl_2 {
+    color: #1B1B1B;
+    font-family: Figtree;
+    font-size: 24px;
+
+    
+    position: absolute;
+    top: 1906px;
+    left: 800px;
+}
+
+#edl_3 {
+    color: #1B1B1B;
+    font-family: Figtree;
+    font-size: 24px;
+
+    position: absolute;
+    top: 1947px;
     left: 800px;
 }
 

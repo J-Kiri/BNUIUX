@@ -87,6 +87,10 @@ export default function Home() {
 
             <img class="linguas" src={ICONLanguage} alt="Linguas"/>
             <h4 class="text" id="edl">LANGUAGES</h4>
+
+            <h4 class="text" id="edl_1">Portuguese</h4>
+            <h4 class="text" id="edl_2">English</h4>
+            <h4 class="text" id="edl_3">Spanish</h4>
         </div>
     )
 }
