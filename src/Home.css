@@ -18,7 +18,8 @@ h1.title {
 
     position: absolute;
     z-index: 1;
-    top: 210px;
+    top: 86px;
+    left: 200px;
 
     span.p {
         color: #F2184F;

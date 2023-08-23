@@ -11,11 +11,11 @@ export default function Footer() {
                 </h1>
 
                 <h1 class="footer_text" id="email">
-                    Breno Neves | UI/UX Designer
+                    brenopazi10@gmail.com
                 </h1>
 
                 <h1 class="footer_text" id="linkedin">
-                    Breno Neves | UI/UX Designer
+                    LinkedIn
                 </h1>
             </div>
         </nav>
