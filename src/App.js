@@ -10,8 +10,8 @@ import Footer from './Footer'
 
 export default function App() {
   return (
-    <>
-      <Navbar />
+    <div className="app">
+      <Navbar className="navbar"/>
 
       <Routes>
         <Route path='/' element={<Home />} />
@@ -19,7 +19,7 @@ export default function App() {
         <Route path='/about' element={<About />} />
       </Routes>
 
-      <Footer />
-    </>
+      <Footer className="footer"/>
+    </div>
   );
 }
