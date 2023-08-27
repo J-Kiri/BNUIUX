@@ -1,9 +1,11 @@
-wrapper {
-    width: 1920px;
-    height: 163px;
-    flex-shrink: 0;
-
+.footer {
     background: #0D0D0D;
+    height: 163px;
+    width: 100%;
+
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
 }
 
 h1.footer_text {
@@ -18,20 +20,20 @@ h1.footer_text {
 #title {
     position: absolute;
     z-index: 1;
-    top: 210px;
+    bottom: 10px;
     left: 200px;
 }
 
 #email {
     position: absolute;
     z-index: 1;
-    top: 210px;
+    bottom: 10px;
     left: 1291px;
 }
 
 #linkedin {
     position: absolute;
     z-index: 1;
-    top: 210px;
+    bottom: 10px;
     left: 1620px;
 }

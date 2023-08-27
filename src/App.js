@@ -11,15 +11,17 @@ import Footer from './Footer'
 export default function App() {
   return (
     <div className="app">
-      <Navbar className="navbar"/>
+      <Navbar/>
 
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/work' element={<Work />} />
-        <Route path='/about' element={<About />} />
-      </Routes>
+      <div>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/work' element={<Work />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
+      </div>
 
-      <Footer className="footer"/>
+      <Footer/>
     </div>
   );
 }
