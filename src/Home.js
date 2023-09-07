@@ -9,7 +9,7 @@ import ICONBooks from "./assets/ICON_Livros.png"
 
 export default function Home() {
     return(
-        <div>
+        <body>
             {/* Main Screen */}
             <h1 className="title">
                 It's about design 
@@ -91,6 +91,8 @@ export default function Home() {
             <h4 className="text" id="edl_1">Portuguese</h4>
             <h4 className="text" id="edl_2">English</h4>
             <h4 className="text" id="edl_3">Spanish</h4>
-        </div>
+
+            <img className="bar" id="bar_2" src={VECTORBar} alt="Bar"/>
+        </body>
     )
 }
