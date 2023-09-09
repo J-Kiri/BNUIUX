@@ -1,19 +1,22 @@
 nav {
-    /*position: fixed;
-    top: 0;*/
-    width: 1440px;
+    width: 100%; /* width: 1440px; */
     height: 136px;
-    flex-shrink: 0;
-    display: block;
+    /* flex-shrink: 0;
+    display: block; */
     background: #0D0D0D;
     align-content: center;
 }
 
 div.wrapper {
-    margin: auto;
+    /* margin: auto;
     text-align: center;
     width: 133%;
-    height: 136px;
+    height: 136px; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 h1.bn {
@@ -25,7 +28,7 @@ h1.bn {
     line-height: 48px;
     float: left;
     margin-top: 35px;
-    margin-left: 140px;
+    margin-left: 125px;
 
     span.uiux {
         color: #F2184F;
@@ -41,7 +44,7 @@ ul {
     display: inline-flex;
     align-items: flex-start;
     margin-top: 35px;
-    margin-right: 140px;
+    margin-right: 110px;
     gap: 56px;
     float: right;
     list-style: none;

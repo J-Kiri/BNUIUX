@@ -1,7 +1,10 @@
-.app {
+html, body {
+    background: #0D0D0D;
+    width: 100%;
+    min-height: calc(100vh + 163px);
     position: relative;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    
+}
+
+.footer {
+    margin-top: auto;
 }

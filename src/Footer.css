@@ -2,10 +2,25 @@
     background: #0D0D0D;
     height: 163px;
     width: 100%;
-
-    margin-top: auto;
-    position: fixed;
+    left: 0;
 }
+
+div.footer_wrapper {
+    align-items: center;
+    display: flex;
+    margin: 86px auto 48px;
+    position: relative;
+    width: 72.22%;
+    bottom: 0px;
+}
+
+.spacer1 {
+    flex: 0 1 288px;
+}
+
+.spacer2 {
+    flex: 0 1 59px;
+  }
 
 h1.footer_text {
     color: #F5F5F5;
@@ -16,23 +31,32 @@ h1.footer_text {
     line-height: normal;
 }
 
+a {
+    color: #F5F5F5;
+    font-family: Figtree;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+
+    a:visited {
+        color: #F5F5F5;
+        text-decoration: none;
+    } 
+}
+
 #title {
-    position: absolute;
-    z-index: 1;
-    bottom: 10px;
+    flex: 0 0 333px;
     left: 200px;
 }
 
 #email {
-    position: absolute;
-    z-index: 1;
-    bottom: 10px;
+    flex: 0 0 270px;
     left: 1291px;
 }
 
 #linkedin {
-    position: absolute;
-    z-index: 1;
-    bottom: 10px;
+    flex: 0 0 90px;
     left: 1620px;
 }

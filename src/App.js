@@ -10,7 +10,7 @@ import Footer from './Footer'
 
 export default function App() {
   return (
-    <div className="app">
+    <body>
       <Navbar/>
 
       <div>
@@ -22,6 +22,6 @@ export default function App() {
       </div>
 
       <Footer />
-    </div>
+    </body>
   );
 }
