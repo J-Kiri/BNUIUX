@@ -6,6 +6,8 @@ export default function Footer() {
     return(
         <footer>
             <div className="footer_wrapper">
+                <div className="spacer3" />
+
                 <h1 className="footer_text" id="title">
                     <Link to="/">Breno Neves | UI/UX Designer</Link>
                 </h1>

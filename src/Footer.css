@@ -10,7 +10,6 @@ div.footer_wrapper {
     display: flex;
     margin-left: 15%;
     position: relative;
-    width: 72.22%;
     bottom: 0px;
     z-index: 1;
 }
@@ -21,7 +20,11 @@ div.footer_wrapper {
 
 .spacer2 {
     flex: 0 1 59px;
-  }
+}
+
+.spacer3 {
+flex: 0 1 200px;
+}
 
 h1.footer_text {
     color: #F5F5F5;
