@@ -8,14 +8,15 @@
 div.footer_wrapper {
     align-items: center;
     display: flex;
-    margin: 86px auto 48px;
+    margin-left: 15%;
     position: relative;
     width: 72.22%;
     bottom: 0px;
+    z-index: 1;
 }
 
 .spacer1 {
-    flex: 0 1 288px;
+    flex: 0 1 100%;
 }
 
 .spacer2 {

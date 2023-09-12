@@ -1,3 +1,9 @@
+body{
+    background: #0D0D0D;
+    width: 100%;
+    height: 2230px;
+}
+
 h1.title {
     width: 580px;
     height: 468px;
@@ -360,12 +366,12 @@ img.bar {
 
     position: absolute;
     z-index: 1;
-    top: 977px;
+    top: 897px;
     left: 44%;
 }
 
 #bar_2 {
-    top: 2178px;
+    top: 2098px;
 }
 
 img.livros {
@@ -377,7 +383,7 @@ img.livros {
 
     position: absolute;
     z-index: 1;
-    top: 1835px;
+    top: 1755px;
     left: 140px;
 }
 
@@ -390,7 +396,7 @@ img.linguas {
 
     position: absolute;
     z-index: 1;
-    top: 1835px;
+    top: 1755px;
     left: 740px;
 }
 
@@ -402,7 +408,7 @@ div.s_background {
     background: #F5F5F5;
 
     position: absolute;
-    top: 993px;
+    top: 913px;
 }
 
 div.square {
@@ -417,7 +423,7 @@ div.square {
 
     
     position: absolute;
-    top: 1315px;
+    top: 1235px;
     left: 140px;
 }
 
@@ -428,6 +434,6 @@ div.square {
 
     
     position: absolute;
-    top: 1315px;
+    top: 1235px;
     left: 745px;
 }
