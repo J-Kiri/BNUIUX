@@ -1,7 +1,7 @@
 body{
     background: #0D0D0D;
     width: 100%;
-    height: 2230px;
+    height: 2160px;
 }
 
 h1.title {
@@ -42,14 +42,14 @@ h1.topic {
     position: absolute;
     z-index: 1;
     left: 140px;
-    top: 1100px;
+    top: 1020px;
 }
 
 #topic2 {
     position: absolute;
     z-index: 1;
     left: 140px;
-    top: 1640px;
+    top: 1560px;
 }
 
 h2.title {
@@ -105,7 +105,7 @@ h4.text {
 
     position: absolute;
     z-index: 1;
-    top: 1251px;
+    top: 1171px;
     left: 173px;
 }
 
@@ -152,7 +152,7 @@ h4.text {
 
     position: absolute;
     z-index: 1;
-    top: 1251px;
+    top: 1171px;
     left: 778px;
 }
 
@@ -186,6 +186,7 @@ h4.text {
     left: 195px;
 }
 
+/* asfasfasd */
 #sq2_p6 {
     position: absolute;
     top: 80px;
@@ -199,7 +200,7 @@ h4.text {
     letter-spacing: -0.48px;
 
     position: absolute;
-    top: 1802px;
+    top: 1722px;
     left: 200px;
 }
 
@@ -209,7 +210,7 @@ h4.text {
     font-size: 24px;
 
     position: absolute;
-    top: 1865px;
+    top: 1785px;
     left: 200px;
 }
 
@@ -220,7 +221,7 @@ h4.text {
 
     
     position: absolute;
-    top: 1906px;
+    top: 1826px;
     left: 200px;
 }
 
@@ -230,7 +231,7 @@ h4.text {
     font-size: 24px;
 
     position: absolute;
-    top: 1947px;
+    top: 1867px;
     left: 200px;
 }
 
@@ -240,7 +241,7 @@ h4.text {
     font-size: 24px;
 
     position: absolute;
-    top: 1988px;
+    top: 1908px;
     left: 200px;
 }
 
@@ -251,7 +252,7 @@ h4.text {
     font-size: 24px;
 
     position: absolute;
-    top: 2029px;
+    top: 1949px;
     left: 200px;
 }
 
@@ -261,7 +262,7 @@ h4.text {
     font-size: 24px;
 
     position: absolute;
-    top: 2070px;
+    top: 1990px;
     left: 200px;
 }
 
@@ -272,7 +273,7 @@ h4.text {
     letter-spacing: -0.48px;
 
     position: absolute;
-    top: 1802px;
+    top: 1722px;
     left: 800px;
 }
 
@@ -282,7 +283,7 @@ h4.text {
     font-size: 24px;
 
     position: absolute;
-    top: 1865px;
+    top: 1785px;
     left: 800px;
 }
 
@@ -293,7 +294,7 @@ h4.text {
 
     
     position: absolute;
-    top: 1906px;
+    top: 1826px;
     left: 800px;
 }
 
@@ -303,7 +304,7 @@ h4.text {
     font-size: 24px;
 
     position: absolute;
-    top: 1947px;
+    top: 1867px;
     left: 800px;
 }
 
