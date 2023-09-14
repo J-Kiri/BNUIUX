@@ -1,0 +1,18 @@
+.title {
+    height: 86px;
+    left: 0;
+
+    color: #F5F5F5;
+    font-family: 'Figtree';
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    position: relative;
+    z-index: 1;
+
+    .p {
+        color: #F2184F;
+    }
+}
