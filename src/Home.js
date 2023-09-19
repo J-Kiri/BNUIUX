@@ -11,7 +11,7 @@ export default function Home() {
     return(
         <body>
             {/* Main Screen */}
-            <h1 className="title">
+            <h1 className="home_title">
                 It's about design 
                 <span className="p">.</span>
             </h1>
