@@ -9,7 +9,7 @@ export default function About() {
         <body id="about">
             <h1 className="about_title">ABOUT ME<span className="p">.</span></h1>
 
-            <div className="background">
+            <div className="a_background">
 
             <img className="profile" src={IMAGEProfile} alt="ProfilePicture"></img>
 

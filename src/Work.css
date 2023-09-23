@@ -3,3 +3,48 @@
     width: 100%;
     height: 2333px;
 }
+
+h1.work_title {
+    height: 86px;
+    margin-left: 140px;
+
+    color: #F5F5F5;
+    font-family: 'Figtree';
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    position: relative;
+    z-index: 1;
+
+    .p {
+        color: #F2184F;
+    }
+}
+
+h3.work_text {
+    width: 560px;
+    height: 96px;
+    flex-shrink: 0;
+
+    color: #BFBFBF;
+    font-family: 'Figtree';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    position: relative;
+    z-index: 1;
+    left: 140px;
+    top: -25px;
+}
+
+div.w_background {
+    width: 100%;
+    height: 2155px;
+    flex-shrink: 0;
+
+    background: #F5F5F5;
+}
