@@ -9,7 +9,7 @@ import ICONBooks from "./assets/ICON_Livros.png"
 
 export default function Home() {
     return(
-        <body>
+        <body id="home">
             {/* Main Screen */}
             <h1 className="home_title">
                 It's about design 
