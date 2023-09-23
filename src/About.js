@@ -7,7 +7,7 @@ import ICONBooks from "./assets/ICON_Livros.png"
 export default function About() {
     return(
         <body id="about">
-            <h1 className="about_title"> ABOUT ME <span className="p">.</span></h1>
+            <h1 className="about_title">ABOUT ME<span className="p">.</span></h1>
 
             <div className="background">
 

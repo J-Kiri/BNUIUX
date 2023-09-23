@@ -1,7 +1,11 @@
 import './Work.css'
+import { Project } from './Projects.js';
+import { Link } from 'react-router-dom';
 
 export default function Work() {
     return(
-        <h1> WORK </h1>
+        <body id="work">
+            <Project />
+        </body>
     )
 }
