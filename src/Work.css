@@ -48,7 +48,7 @@ ul.filter_categories {
 
     position: relative;
     z-index: 1;
-    right: 600px;
+    right: 1122px;
 
     li.filter {
         color: #BFBFBF;
@@ -66,4 +66,16 @@ div.w_background {
     flex-shrink: 0;
 
     background: #F5F5F5;
+}
+
+div.project_gallery {
+    z-index: 1;
+
+    .project_gallery img {
+        width: 560px;
+        height: 400px;
+        flex-shrink: 0;
+
+        border-radius: 12px;
+    }
 }
