@@ -14,9 +14,15 @@ export default function Work() {
             </h3>
 
             <div className="w_background">
-                
+                <ul className="filter_categories">
+                    <li className="filter">All</li>
+                    <li className="filter">UX Design</li>
+                    <li className="filter">UI Design</li>
+                    <li className="filter">Web</li>
+                    <li className="filter">Mobile App</li>
+                </ul>
             </div>
-
+            
             <Project />
         </body>
     )

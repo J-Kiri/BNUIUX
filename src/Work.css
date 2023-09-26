@@ -41,6 +41,25 @@ h3.work_text {
     top: -25px;
 }
 
+ul.filter_categories {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 32px;
+
+    position: relative;
+    z-index: 1;
+    right: 600px;
+
+    li.filter {
+        color: #BFBFBF;
+        font-family: Figtree;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
 div.w_background {
     width: 100%;
     height: 2155px;
