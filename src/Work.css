@@ -52,11 +52,15 @@ ul.filter_categories {
 
     li.filter {
         color: #BFBFBF;
-        font-family: Figtree;
+        font-family: 'Figtree';
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+    }
+
+    li.filter.active{
+        color: #000000;
     }
 }
 
@@ -69,7 +73,13 @@ div.w_background {
 }
 
 div.project_gallery {
-    z-index: 1;
+    display: flex;
+    width: 1160px;
+    height: 400px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-shrink: 0;
 
     .project_gallery img {
         width: 560px;

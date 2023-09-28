@@ -56,7 +56,7 @@ export default function About() {
                     <span className="title_bg">UX Design</span>
                 </h4>
 
-                <div className="square" id="sq1">
+                <div className="a_square" id="sq1">
                     <h4 className="text" id="sq1_p1_about"><span className="title_bg">Analysis Tools</span></h4>
                     <h4 className="text" id="sq1_p2_about"><span className="title_bg">UX Heuristics</span></h4>
                     <h4 className="text" id="sq1_p3_about"><span className="title_bg">Userflow</span></h4>
@@ -69,7 +69,7 @@ export default function About() {
                     <span className="title_bg">UI Design</span>
                 </h4>
 
-                <div className="square" id="sq2">
+                <div className="a_square" id="sq2">
                     <h4 className="text" id="sq2_p1_about"><span className="title_bg">Figma</span></h4>
                     <h4 className="text" id="sq2_p2_about"><span className="title_bg">Advanced Typography</span></h4>
                     <h4 className="text" id="sq2_p3_about"><span className="title_bg">Grids</span></h4>

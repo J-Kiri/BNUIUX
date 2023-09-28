@@ -14,7 +14,10 @@ function FilterMenu({categories, selectedCategories, onCategoryClick}) {
                     <li
                         key={index}
                         className={`filter ${selectedCategories === category ? 'active' : ''}`}
-                        onclick={() => onCategoryClick(category)}
+                        onClick={() => {
+                            //console.log('Clicado em:', category);
+                            onCategoryClick(category)}
+                        }
                     >
                         {category}
                     </li>
@@ -27,7 +30,7 @@ function FilterMenu({categories, selectedCategories, onCategoryClick}) {
 function ProjectGallery({projects, selectedCategory}) {
     const filteredProjects =
         selectedCategory === 'All' ? projects :
-            projects.filter(project => project.category.includes(selectedCategory));
+            projects.filter(project => project.categories.includes(selectedCategory));
 
     return(
         <div className="project_gallery">
@@ -43,6 +46,7 @@ export default function Work() {
     const projects = [
         {url: PROJECTBikcraft, alt: "Bikcraft", categories: ["UX Design", "UI Design", "Web"]},
         {url: PROJECTNami, alt: "Nami", categories: ["UX Design", "UI Design", "Mobile App"]},
+        {url: PROJECTNami, alt: "Nami 2", categories: ["UX Design", "UI Design", "Mobile App"]},
     ];
 
     const allCategories = ["All", "UX Design", "UI Design", "Web", "Mobile App"];

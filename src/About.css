@@ -307,15 +307,19 @@ div.a_background {
     background: #F5F5F5;
 }
 
+div.a_square {
+    border-radius: 8px;
+    top: 1390px;
+    background: #E6E6E6;
+}
+
 #sq1 {
     position: absolute;
-    top: 1390px;
     left: 140px;
 }
 
 #sq2 {
     position: absolute;
-    top: 1390px;
     left: 745px;
 }
 

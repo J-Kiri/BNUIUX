@@ -43,9 +43,11 @@ h1.bn {
 ul {
     display: inline-flex;
     align-items: flex-start;
+    gap: 56px;
+    
     margin-top: 35px;
     margin-right: 110px;
-    gap: 56px;
+    
     float: right;
     list-style: none;
 

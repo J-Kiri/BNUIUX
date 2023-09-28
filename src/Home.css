@@ -412,8 +412,9 @@ div.s_background {
     top: 913px;
 }
 
-div.square {
+div.h_square {
     border-radius: 8px;
+    top: 1235px;
     background: #E6E6E6;
 }
 
@@ -424,7 +425,6 @@ div.square {
 
     
     position: absolute;
-    top: 1235px;
     left: 140px;
 }
 
@@ -435,6 +435,5 @@ div.square {
 
     
     position: absolute;
-    top: 1235px;
     left: 745px;
 }
