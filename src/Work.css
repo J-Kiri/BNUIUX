@@ -81,6 +81,10 @@ div.project_gallery {
     gap: 40px;
     flex-shrink: 0;
 
+    position: relative;
+    z-index: 1;
+    right: 1122px;
+
     .project_gallery img {
         width: 560px;
         height: 400px;

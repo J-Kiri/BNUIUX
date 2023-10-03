@@ -73,7 +73,6 @@ export default function Work() {
                     selectedCategories={selectedCategory}
                     onCategoryClick={handleCategoryClick}
                 />
-
                 <ProjectGallery projects={projects} selectedCategory={selectedCategory} />
             </div>
         </body>
