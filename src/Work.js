@@ -8,22 +8,20 @@ import PROJECTNami from "./assets/PROJECT_Nami.png"
 
 function FilterMenu({categories, selectedCategories, onCategoryClick}) {
     return(
-        <div className="w_background">
-            <ul className="filter_categories">
-                {categories.map((category, index) => (
-                    <li
-                        key={index}
-                        className={`filter ${selectedCategories === category ? 'active' : ''}`}
-                        onClick={() => {
-                            //console.log('Clicado em:', category);
-                            onCategoryClick(category)}
-                        }
-                    >
-                        {category}
-                    </li>
-                ))}
-            </ul>
-        </div>
+        <ul className="filter_categories">
+            {categories.map((category, index) => (
+                <li
+                    key={index}
+                    className={`filter ${selectedCategories === category ? 'active' : ''}`}
+                    onClick={() => {
+                        //console.log('Clicado em:', category);
+                        onCategoryClick(category)}
+                    }
+                >
+                    {category}
+                </li>
+            ))}
+        </ul>
     );
 }
 
@@ -33,11 +31,14 @@ function ProjectGallery({projects, selectedCategory}) {
             projects.filter(project => project.categories.includes(selectedCategory));
 
     return(
-        <div className="project_gallery">
-            {filteredProjects.map((image, index) => (
-                <img key={index} src={image.url} alt={image.alt}/>
-            ))}
-        </div>
+        
+        <div className="gallery_wrapper">
+            <div className="project_gallery">
+                {filteredProjects.map((image, index) => (
+                    <img key={index} src={image.url} alt={image.alt}/>
+                ))}
+            </div>
+        </div
     ); 
 }
 
@@ -73,6 +74,7 @@ export default function Work() {
                     selectedCategories={selectedCategory}
                     onCategoryClick={handleCategoryClick}
                 />
+
                 <ProjectGallery projects={projects} selectedCategory={selectedCategory} />
             </div>
         </body>

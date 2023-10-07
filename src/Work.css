@@ -72,18 +72,20 @@ div.w_background {
     background: #F5F5F5;
 }
 
+div.gallery_wrapper {
+    top: 300px;
+    left: 140px;
+}
+
 div.project_gallery {
     display: flex;
     width: 1160px;
     height: 400px;
+
     justify-content: center;
     align-items: flex-start;
     gap: 40px;
     flex-shrink: 0;
-
-    position: relative;
-    z-index: 1;
-    right: 1122px;
 
     .project_gallery img {
         width: 560px;
