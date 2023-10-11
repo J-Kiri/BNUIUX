@@ -31,21 +31,20 @@ function ProjectGallery({projects, selectedCategory}) {
             projects.filter(project => project.categories.includes(selectedCategory));
 
     return(
-        
         <div className="gallery_wrapper">
-            <div className="project_gallery">
-                {filteredProjects.map((image, index) => (
-                    <img key={index} src={image.url} alt={image.alt}/>
-                ))}
-            </div>
-        </div
+            {filteredProjects.map((image, index) => (
+                <link to="">
+                <img key={index} src={image.url} alt={image.alt}/>
+                </link>
+            ))}
+        </div>
     ); 
 }
 
 
 export default function Work() {
     const projects = [
-        {url: PROJECTBikcraft, alt: "Bikcraft", categories: ["UX Design", "UI Design", "Web"]},
+        {url: PROJECTBikcraft, alt: "Bikcraft", page: "", categories: ["UX Design", "UI Design", "Web"]},
         {url: PROJECTNami, alt: "Nami", categories: ["UX Design", "UI Design", "Mobile App"]},
         {url: PROJECTNami, alt: "Nami 2", categories: ["UX Design", "UI Design", "Mobile App"]},
     ];
@@ -74,6 +73,8 @@ export default function Work() {
                     selectedCategories={selectedCategory}
                     onCategoryClick={handleCategoryClick}
                 />
+
+                <div className="separator"/>
 
                 <ProjectGallery projects={projects} selectedCategory={selectedCategory} />
             </div>

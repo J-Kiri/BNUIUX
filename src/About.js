@@ -10,8 +10,7 @@ export default function About() {
             <h1 className="about_title">ABOUT ME<span className="p">.</span></h1>
 
             <div className="a_background">
-
-            <img className="profile" src={IMAGEProfile} alt="ProfilePicture"></img>
+                <img className="profile" src={IMAGEProfile} alt="ProfilePicture"></img>
 
                 <h3 className="text_about" id="text1">
                     Hi!<br/>

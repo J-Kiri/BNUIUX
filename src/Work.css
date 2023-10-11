@@ -45,10 +45,10 @@ ul.filter_categories {
     display: inline-flex;
     align-items: flex-start;
     gap: 32px;
+    left: 100px;
 
-    position: relative;
+    position: absolute;
     z-index: 1;
-    right: 1122px;
 
     li.filter {
         color: #BFBFBF;
@@ -72,20 +72,32 @@ div.w_background {
     background: #F5F5F5;
 }
 
-div.gallery_wrapper {
-    top: 300px;
+div.separator {
+    width: 1160px;
+    height: 1px;
+    flex-shrink: 0;
+
+    top: 350px;
     left: 140px;
+
+    position: absolute;
+    z-index: 1;
+
+    background: #BFBFBF;
 }
 
-div.project_gallery {
-    display: flex;
-    width: 1160px;
-    height: 400px;
+.gallery_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    row-gap: 370px;
+    column-gap: 40px;
 
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    flex-shrink: 0;
+    margin-top: 175px;
+    margin-left: 140px;
+
+    position: absolute;
+    z-index: 1;
 
     .project_gallery img {
         width: 560px;
