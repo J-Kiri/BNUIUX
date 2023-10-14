@@ -59,8 +59,12 @@ ul.filter_categories {
         line-height: normal;
     }
 
-    li.filter.active{
+    li.filter.active {
         color: #000000;
+
+        span.category_count {
+            color: #F2184F;
+        }
     }
 }
 
@@ -106,4 +110,6 @@ div.separator {
 
         border-radius: 12px;
     }
+
+
 }

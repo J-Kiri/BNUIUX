@@ -6,7 +6,7 @@ import { useState } from 'react';
 import PROJECTBikcraft from "./assets/PROJECT_Bikcraft.png"
 import PROJECTNami from "./assets/PROJECT_Nami.png"
 
-function FilterMenu({categories, selectedCategories, onCategoryClick}) {
+function FilterMenu({categories, selectedCategories, onCategoryClick, categoryCounts}) {
     return(
         <ul className="filter_categories">
             {categories.map((category, index) => (
@@ -18,7 +18,7 @@ function FilterMenu({categories, selectedCategories, onCategoryClick}) {
                         onCategoryClick(category)}
                     }
                 >
-                    {category}
+                    {category} <span className="category_count">{categoryCounts[category] || 0}</span>
                 </li>
             ))}
         </ul>
@@ -33,9 +33,9 @@ function ProjectGallery({projects, selectedCategory}) {
     return(
         <div className="gallery_wrapper">
             {filteredProjects.map((image, index) => (
-                <link to="">
-                <img key={index} src={image.url} alt={image.alt}/>
-                </link>
+                <Link to={image.page}>
+                    <img key={index} src={image.url} alt={image.alt}/>
+                </Link>
             ))}
         </div>
     ); 
@@ -44,17 +44,31 @@ function ProjectGallery({projects, selectedCategory}) {
 
 export default function Work() {
     const projects = [
-        {url: PROJECTBikcraft, alt: "Bikcraft", page: "", categories: ["UX Design", "UI Design", "Web"]},
-        {url: PROJECTNami, alt: "Nami", categories: ["UX Design", "UI Design", "Mobile App"]},
-        {url: PROJECTNami, alt: "Nami 2", categories: ["UX Design", "UI Design", "Mobile App"]},
+        {url: PROJECTBikcraft, alt: "Bikcraft", page: "./bikcraft", categories: ["UX Design", "UI Design", "Web"]},
+        {url: PROJECTNami, alt: "Nami", page: "./nami", categories: ["UX Design", "UI Design", "Mobile App"]},
     ];
 
     const allCategories = ["All", "UX Design", "UI Design", "Web", "Mobile App"];
 
     const [selectedCategory, setSelectedCategory] = useState("All");
 
+    const [categoryCounts, setCategoryCounts] = useState({});
+
     const handleCategoryClick = (category) => {
         setSelectedCategory(category);
+
+        const counts = {};
+        projects.forEach((project) => {
+            project.categories.forEach((category) => {
+                if(counts[category]){
+                    counts[category]++;
+                }else{
+                    counts[category] = 1;
+                }
+            });
+        });
+
+        setCategoryCounts(counts);
     }
 
     return(
@@ -72,6 +86,7 @@ export default function Work() {
                     categories={allCategories}
                     selectedCategories={selectedCategory}
                     onCategoryClick={handleCategoryClick}
+                    categoryCounts={categoryCounts}
                 />
 
                 <div className="separator"/>
