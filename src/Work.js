@@ -46,6 +46,7 @@ export default function Work() {
     const projects = [
         {url: PROJECTBikcraft, alt: "Bikcraft", page: "./bikcraft", categories: ["UX Design", "UI Design", "Web"]},
         {url: PROJECTNami, alt: "Nami", page: "./nami", categories: ["UX Design", "UI Design", "Mobile App"]},
+        {url: PROJECTNami, alt: "Nami", page: "./nami", categories: ["UX Design", "UI Design", "Mobile App"]},
     ];
 
     const allCategories = ["All", "UX Design", "UI Design", "Web", "Mobile App"];
@@ -73,7 +74,7 @@ export default function Work() {
 
     return(
         <body id="work">
-            <h1 className="about_title">WORK<span className="p">.</span></h1>
+            <h1 className="work_title">WORK<span className="p">.</span></h1>
 
             <h3 className="work_text">
                 All projects shown below are the result of a lot of research,
