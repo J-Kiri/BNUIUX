@@ -30,6 +30,9 @@ function ProjectGallery({projects, selectedCategory}) {
         selectedCategory === 'All' ? projects :
             projects.filter(project => project.categories.includes(selectedCategory));
 
+    const w_backgroundHeight = 690 + (Math.ceil(filteredProjects.length / 2) - 1) * 370;
+    onCalculateBackgroundHeight(w_backgroundHeight);
+
     return(
         <div className="gallery_wrapper">
             {filteredProjects.map((image, index) => (
@@ -41,7 +44,6 @@ function ProjectGallery({projects, selectedCategory}) {
     ); 
 }
 
-
 export default function Work() {
     const projects = [
         {url: PROJECTBikcraft, alt: "Bikcraft", page: "./bikcraft", categories: ["UX Design", "UI Design", "Web"]},
@@ -52,7 +54,6 @@ export default function Work() {
     const allCategories = ["All", "UX Design", "UI Design", "Web", "Mobile App"];
 
     const [selectedCategory, setSelectedCategory] = useState("All");
-
     const [categoryCounts, setCategoryCounts] = useState({});
 
     const handleCategoryClick = (category) => {
@@ -82,7 +83,8 @@ export default function Work() {
                 December/2022 to the present day.
             </h3>
 
-            <div className="w_background">
+            <ProjectGallery onCalculateBackgroundHeight={setBackgroundHeight} />
+            <div className="w_background" style={{height: `${w_backgroundHeight}px`}}>
                 <FilterMenu
                     categories={allCategories}
                     selectedCategories={selectedCategory}
