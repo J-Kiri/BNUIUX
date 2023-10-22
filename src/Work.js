@@ -25,13 +25,13 @@ function FilterMenu({categories, selectedCategories, onCategoryClick, categoryCo
     );
 }
 
-function ProjectGallery({projects, selectedCategory}) {
+function ProjectGallery({projects, selectedCategory, onCalculateBackgroundHeight}) {
     const filteredProjects =
         selectedCategory === 'All' ? projects :
             projects.filter(project => project.categories.includes(selectedCategory));
 
-    const w_backgroundHeight = 690 + (Math.ceil(filteredProjects.length / 2) - 1) * 370;
-    onCalculateBackgroundHeight(w_backgroundHeight);
+    const wBackgroundHeight = 690 + (Math.ceil(filteredProjects.length / 2) - 1) * 370;
+    onCalculateBackgroundHeight(wBackgroundHeight);
 
     return(
         <div className="gallery_wrapper">
@@ -49,12 +49,21 @@ export default function Work() {
         {url: PROJECTBikcraft, alt: "Bikcraft", page: "./bikcraft", categories: ["UX Design", "UI Design", "Web"]},
         {url: PROJECTNami, alt: "Nami", page: "./nami", categories: ["UX Design", "UI Design", "Mobile App"]},
         {url: PROJECTNami, alt: "Nami", page: "./nami", categories: ["UX Design", "UI Design", "Mobile App"]},
+        {url: PROJECTNami, alt: "Nami", page: "./nami", categories: ["UX Design", "UI Design", "Mobile App"]},
+        {url: PROJECTNami, alt: "Nami", page: "./nami", categories: ["UX Design", "UI Design", "Mobile App"]},
+        {url: PROJECTNami, alt: "Nami", page: "./nami", categories: ["UX Design", "UI Design", "Mobile App"]},
+        {url: PROJECTNami, alt: "Nami", page: "./nami", categories: ["UX Design", "UI Design", "Mobile App"]},
+        {url: PROJECTNami, alt: "Nami", page: "./nami", categories: ["UX Design", "UI Design", "Mobile App"]},
+        {url: PROJECTNami, alt: "Nami", page: "./nami", categories: ["UX Design", "UI Design", "Mobile App"]},
+
+
     ];
 
     const allCategories = ["All", "UX Design", "UI Design", "Web", "Mobile App"];
 
     const [selectedCategory, setSelectedCategory] = useState("All");
     const [categoryCounts, setCategoryCounts] = useState({});
+    const [backgroundHeight, setBackgroundHeight] = useState(690);
 
     const handleCategoryClick = (category) => {
         setSelectedCategory(category);
@@ -83,8 +92,6 @@ export default function Work() {
                 December/2022 to the present day.
             </h3>
 
-            <ProjectGallery onCalculateBackgroundHeight={setBackgroundHeight} />
-            <div className="w_background" style={{height: `${w_backgroundHeight}px`}}>
                 <FilterMenu
                     categories={allCategories}
                     selectedCategories={selectedCategory}
@@ -94,8 +101,12 @@ export default function Work() {
 
                 <div className="separator"/>
 
-                <ProjectGallery projects={projects} selectedCategory={selectedCategory} />
-            </div>
+                <ProjectGallery
+                    projects={projects}
+                    selectedCategory={selectedCategory}
+                    onCalculateBackgroundHeight={setBackgroundHeight}
+                    />
+            <div className="w_background" style={{height: `${backgroundHeight}px`}} />
         </body>
     )
 }
