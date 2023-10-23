@@ -19,6 +19,7 @@ div.wrapper {
     padding: 0 20px;
 }
 
+/* Title */
 h1.bn {
     color: #F5F5F5;
     font-family: 'Figtree';
@@ -29,17 +30,19 @@ h1.bn {
     float: left;
     margin-top: 35px;
     margin-left: 120px;
-
-    span.uiux {
-        color: #F2184F;
-        font-family: 'Figtree';
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: 48px;
-    }
 }
 
+span.uiux {
+    color: #F2184F;
+    font-family: 'Figtree';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 48px;
+}
+/* Title */
+
+/* Options Menu */
 ul {
     display: inline-flex;
     align-items: flex-start;
@@ -50,19 +53,20 @@ ul {
     
     float: right;
     list-style: none;
-
-    a {
-        color: #F5F5F5;
-        font-family: 'Figtree';
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 48px;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: #F2184F;
-        text-decoration: none;
-    }
 }
+
+a {
+    color: #F5F5F5;
+    font-family: 'Figtree';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F2184F;
+    text-decoration: none;
+}
+/* Options Menu */

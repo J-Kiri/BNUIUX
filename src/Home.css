@@ -4,6 +4,7 @@
     height: 2160px;
 }
 
+/* Hero title */
 h1.home_title {
     width: 580px;
     height: 468px;
@@ -19,11 +20,12 @@ h1.home_title {
 
     position: absolute;
     z-index: 1;
-
-    span.p {
-        color: #F2184F;
-    }
 }
+
+span.p {
+    color: #F2184F;
+}
+/* Hero title */
 
 h1.topic {
     color: #1B1B1B;
@@ -32,10 +34,10 @@ h1.topic {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+}
 
-    span.p {
-        color: #F2184F;
-    }
+span.p {
+    color: #F2184F;
 }
 
 #topic1 {

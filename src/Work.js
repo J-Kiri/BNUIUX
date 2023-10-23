@@ -1,7 +1,7 @@
-import './Work.css'
- 
+import './Work.css' 
+
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import PROJECTBikcraft from "./assets/PROJECT_Bikcraft.png"
 import PROJECTNami from "./assets/PROJECT_Nami.png"
@@ -30,8 +30,13 @@ function ProjectGallery({projects, selectedCategory, onCalculateBackgroundHeight
         selectedCategory === 'All' ? projects :
             projects.filter(project => project.categories.includes(selectedCategory));
 
-    const wBackgroundHeight = 690 + (Math.ceil(filteredProjects.length / 2) - 1) * 370;
-    onCalculateBackgroundHeight(wBackgroundHeight);
+    const projectPerRow = 2;
+    const numRows = Math.ceil(filteredProjects.length / projectPerRow);
+    const backgroundHeight = 690 + (numRows - 1) * 370;
+
+    useEffect(() => {
+        onCalculateBackgroundHeight(backgroundHeight);
+    }, [backgroundHeight, onCalculateBackgroundHeight]);
 
     return(
         <div className="gallery_wrapper">
@@ -105,8 +110,9 @@ export default function Work() {
                     projects={projects}
                     selectedCategory={selectedCategory}
                     onCalculateBackgroundHeight={setBackgroundHeight}
-                    />
-            <div className="w_background" style={{height: `${backgroundHeight}px`}} />
+                />
+                
+                <div className="w_background" style={{height: `${backgroundHeight}px`}} />
         </body>
     )
 }
