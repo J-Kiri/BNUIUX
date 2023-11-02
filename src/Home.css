@@ -6,7 +6,8 @@
 
 /* Hero title */
 h1.home_title {
-    width: 580px;
+    max-width: 580px;
+    width: 90%;
     height: 468px;
     margin-left: 140px;
     flex-shrink: 0;
@@ -27,6 +28,7 @@ span.p {
 }
 /* Hero title */
 
+/*  */
 h1.topic {
     color: #1B1B1B;
     font-family: Figtree;
@@ -39,6 +41,7 @@ h1.topic {
 span.p {
     color: #F2184F;
 }
+/*  */
 
 #topic1 {
     position: absolute;
@@ -88,17 +91,19 @@ h4.text {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-
-    span.title_bg {
-        display: inline-flex;
-        padding: 8px 16px;
-        align-items: flex-start;
-        gap: 10px;
-
-        border-radius: 4px;
-        background: #F5F5F5;
-    }
 }
+
+/*  */
+span.title_bg {
+    display: inline-flex;
+    padding: 8px 16px;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-radius: 4px;
+    background: #F5F5F5;
+}
+/*  */
 
 #ux {
     color: #F2184F;
@@ -310,6 +315,7 @@ h4.text {
     left: 800px;
 }
 
+/*  */
 li.about {
     position: absolute;
     z-index: 1;
@@ -334,6 +340,7 @@ li.about {
         text-decoration: none;
     }
 }
+/*  */
 
 img.arrow {
     width: 24px;

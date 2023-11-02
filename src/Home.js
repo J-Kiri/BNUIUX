@@ -27,7 +27,7 @@ export default function Home() {
             </li>
 
             <Link to = '/about'>
-                <img class="arrow" src={VECTORArrow} alt="Arrow"/>
+                <img className="arrow" src={VECTORArrow} alt="Arrow"/>
             </Link>      
 
             <img className="paint" src={IMAGEPaint} alt="Paint"/>

@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 export default function Navbar() {
     return(
         <nav>
-            <div class="wrapper">
-                <h1 class="bn">bn
-                    <span class="uiux">uiux</span>
+            <div className="wrapper">
+                <h1 className="bn">bn
+                    <span className="uiux">uiux</span>
                 </h1>
 
                 <ul>
